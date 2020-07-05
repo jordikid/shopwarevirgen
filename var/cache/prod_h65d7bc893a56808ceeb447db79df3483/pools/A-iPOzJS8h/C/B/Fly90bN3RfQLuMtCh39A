@@ -1,0 +1,34 @@
+<?php //%255BShopware%255CStorefront%255CController%255CAddressController%2523accountAddressOverview%255D%255B1%255D
+
+namespace Symfony\Component\VarExporter\Internal;
+
+return $getExpiry ? PHP_INT_MAX : Hydrator::hydrate(
+    $o = [
+        clone (Registry::$prototypes['Symfony\\Component\\Routing\\Annotation\\Route'] ?? Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/account/address',
+            ],
+            'name' => [
+                'frontend.account.address.page',
+            ],
+            'options' => [
+                [
+                    'seo' => 'false',
+                ],
+            ],
+            'methods' => [
+                [
+                    'GET',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+    ],
+    []
+);

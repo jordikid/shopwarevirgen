@@ -1,0 +1,29 @@
+<?php //%255BShopware%255CCore%255CCheckout%255CCart%255CSalesChannel%255CSalesChannelCartController%2523addProduct%255D%255B1%255D
+
+namespace Symfony\Component\VarExporter\Internal;
+
+return $getExpiry ? PHP_INT_MAX : Hydrator::hydrate(
+    $o = [
+        clone (Registry::$prototypes['Symfony\\Component\\Routing\\Annotation\\Route'] ?? Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/sales-channel-api/v{version}/checkout/cart/product/{id}',
+            ],
+            'name' => [
+                'sales-channel-api.checkout.frontend.cart.product.add',
+            ],
+            'methods' => [
+                [
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+    ],
+    []
+);

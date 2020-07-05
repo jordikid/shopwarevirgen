@@ -1,0 +1,35 @@
+<?php //%255BShopware%255CStorefront%255CController%255CProductController%2523loadReviews%255D%255B1%255D
+
+namespace Symfony\Component\VarExporter\Internal;
+
+return $getExpiry ? PHP_INT_MAX : Hydrator::hydrate(
+    $o = [
+        clone (Registry::$prototypes['Symfony\\Component\\Routing\\Annotation\\Route'] ?? Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/product/{productId}/reviews',
+            ],
+            'name' => [
+                'frontend.product.reviews',
+            ],
+            'defaults' => [
+                [
+                    'XmlHttpRequest' => true,
+                ],
+            ],
+            'methods' => [
+                [
+                    'GET',
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+    ],
+    []
+);

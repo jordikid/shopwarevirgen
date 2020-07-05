@@ -1,0 +1,34 @@
+{
+  "sw-profile": {
+    "general": {
+      "mainMenuItemGeneral": "Profile",
+      "description": "Verwaltung Deines Profils.",
+      "headlineProfile": "Dein Profil"
+    },
+    "index": {
+      "buttonSaveLabel": "Speichern",
+      "titleInfoCard": "Profil-Informationen",
+      "titleImageCard": "Profilbild",
+      "titlePasswordCard": "Passwort",
+      "labelFirstNameField": "Vorname",
+      "labelLastNameField": "Nachname",
+      "labelUsernameField": "Benutzername",
+      "labelEmailField": "E-Mail-Adresse",
+      "labelOldPassword": "Altes Passwort",
+      "placeholderOldPassword": "Altes Passwort eingeben ...",
+      "labelNewPassword": "Neues Passwort",
+      "placeholderNewPassword": "Neues Passwort eingeben ...",
+      "labelNewPasswordConfirm": "Passwort bestätigen",
+      "placeholderNewPasswordConfirm": "Neues Passwort erneut eingeben ...",
+      "notificationPasswordErrorTitle": "Fehler",
+      "notificationPasswordErrorMessage": "Die eingegebenen Passwörter stimmen nicht überein.",
+      "notificationOldPasswordErrorMessage": "Bitte gib Dein aktuelles Passwort korrekt ein.",
+      "notificationNewPasswordIsSameAsOldErrorMessage": "Dein neues Passwort stimmt mit dem alten überein. Bitte überlege dir ein neues Passwort.",
+      "notificationInvalidEmailErrorMessage": "Bitte gib eine valide E-Mail Adresse ein.",
+      "notificationSaveSuccessMessage": "Deine Profilinformationen wurden erfolgreich gespeichert.",
+      "notificationSaveErrorMessage": "Deine Profilinformationen konnten nicht gespeichert werden.",
+      "labelUploadAvatar": "Lade ein Profilbild hoch",
+      "labelUseAsAvatar": "Als Profilbild nutzen"
+    }
+  }
+}

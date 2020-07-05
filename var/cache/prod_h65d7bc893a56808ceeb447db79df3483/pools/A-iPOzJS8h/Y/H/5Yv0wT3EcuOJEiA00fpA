@@ -1,0 +1,259 @@
+<?php //%255BShopware%255CCore%255CContent%255CProduct%255CSalesChannel%255CCrossSelling%255CSalesChannelCrossSellingController%2523getCrossSelling%255D%255B1%255D
+
+namespace Symfony\Component\VarExporter\Internal;
+
+return $getExpiry ? PHP_INT_MAX : Hydrator::hydrate(
+    $o = [
+        clone (($p = &Registry::$prototypes)['OpenApi\\Annotations\\Get'] ?? Registry::p('OpenApi\\Annotations\\Get')),
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? Registry::p('OpenApi\\Annotations\\Schema')),
+        clone ($p['OpenApi\\Context'] ?? Registry::p('OpenApi\\Context')),
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone ($p['OpenApi\\Annotations\\Items'] ?? Registry::p('OpenApi\\Annotations\\Items')),
+        clone ($p['OpenApi\\Annotations\\Property'] ?? Registry::p('OpenApi\\Annotations\\Property')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Annotations\\Items'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Response'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Annotations\\Response'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Context'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'path' => [
+                '/product/{id}/cross-selling',
+            ],
+            'tags' => [
+                [
+                    'Sales Channel Api',
+                ],
+            ],
+            'description' => [
+                'Get the cross selling products for given product',
+                'Id of the product from which the cross-selling products should be loaded',
+                5 => 'The list of found cross selling products',
+                9 => 'The total amount of products in this cross selling',
+                13 => 'The products for this cross-selling',
+            ],
+            'operationId' => [
+                'getCrossSelling',
+            ],
+            'parameters' => [
+                [
+                    $o[1],
+                ],
+            ],
+            'responses' => [
+                [
+                    $o[5],
+                    $o[19],
+                    $o[21],
+                ],
+            ],
+            '_context' => [
+                $o[23],
+                $o[4],
+                $o[3],
+                5 => $o[6],
+                7 => $o[18],
+                $o[17],
+                $o[10],
+                11 => $o[12],
+                13 => $o[16],
+                $o[15],
+                19 => $o[20],
+                21 => $o[22],
+            ],
+            'parameter' => [
+                1 => 'id',
+            ],
+            'name' => [
+                1 => 'id',
+            ],
+            'in' => [
+                1 => 'path',
+            ],
+            'schema' => [
+                1 => $o[2],
+            ],
+            'type' => [
+                2 => 'string',
+                7 => 'array',
+                'object',
+                'integer',
+                13 => 'array',
+            ],
+            'filename' => [
+                3 => '/opt/bitnami/apps/shopware/htdocs/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/opt/bitnami/apps/shopware/htdocs/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                6 => '/opt/bitnami/apps/shopware/htdocs/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                10 => '/opt/bitnami/apps/shopware/htdocs/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                12 => '/opt/bitnami/apps/shopware/htdocs/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                15 => '/opt/bitnami/apps/shopware/htdocs/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/opt/bitnami/apps/shopware/htdocs/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/opt/bitnami/apps/shopware/htdocs/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/opt/bitnami/apps/shopware/htdocs/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                20 => '/opt/bitnami/apps/shopware/htdocs/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                22 => '/opt/bitnami/apps/shopware/htdocs/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                '/opt/bitnami/apps/shopware/htdocs/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                3 => 825,
+                825,
+                6 => 825,
+                10 => 825,
+                12 => 825,
+                15 => 825,
+                825,
+                825,
+                825,
+                20 => 825,
+                22 => 825,
+                825,
+            ],
+            'method' => [
+                3 => 'Annotation',
+                'Annotation',
+                6 => 'Annotation',
+                10 => 'Annotation',
+                12 => 'Annotation',
+                15 => 'Annotation',
+                'Annotation',
+                'Annotation',
+                'Annotation',
+                20 => 'Annotation',
+                22 => 'Annotation',
+                'Annotation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                'DocParser',
+                6 => 'DocParser',
+                10 => 'DocParser',
+                12 => 'DocParser',
+                15 => 'DocParser',
+                'DocParser',
+                'DocParser',
+                'DocParser',
+                20 => 'DocParser',
+                22 => 'DocParser',
+                'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                6 => 'Doctrine\\Common\\Annotations',
+                10 => 'Doctrine\\Common\\Annotations',
+                12 => 'Doctrine\\Common\\Annotations',
+                15 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+                20 => 'Doctrine\\Common\\Annotations',
+                22 => 'Doctrine\\Common\\Annotations',
+                'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                [
+                    $o[1],
+                ],
+                6 => [
+                    $o[5],
+                ],
+                10 => [
+                    $o[9],
+                ],
+                12 => [
+                    $o[11],
+                ],
+                15 => [
+                    $o[14],
+                ],
+                [
+                    $o[13],
+                ],
+                [
+                    $o[8],
+                ],
+                [
+                    $o[7],
+                ],
+                20 => [
+                    $o[19],
+                ],
+                22 => [
+                    $o[21],
+                ],
+                [
+                    $o[0],
+                ],
+            ],
+            'response' => [
+                5 => '200',
+                19 => '404',
+                21 => '401',
+            ],
+            '_unmerged' => [
+                5 => [
+                    $o[7],
+                ],
+            ],
+            'items' => [
+                7 => $o[8],
+                13 => $o[14],
+            ],
+            'properties' => [
+                8 => [
+                    $o[9],
+                    $o[11],
+                    $o[13],
+                ],
+            ],
+            'property' => [
+                9 => 'total',
+                11 => 'crossSelling',
+                13 => 'products',
+            ],
+            'ref' => [
+                11 => '#/components/schemas/product_cross_selling_flat',
+                14 => '#/components/schemas/product_flat',
+                19 => '#/components/responses/404',
+                21 => '#/components/responses/401',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                24 => '/sales-channel-api/v{version}/product/{id}/cross-selling',
+            ],
+            'name' => [
+                24 => 'sales-channel-api.product.cross-selling',
+            ],
+            'methods' => [
+                24 => [
+                    'GET',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[24],
+    ],
+    []
+);

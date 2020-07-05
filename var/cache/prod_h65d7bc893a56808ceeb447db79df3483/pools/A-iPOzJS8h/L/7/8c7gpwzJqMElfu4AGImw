@@ -1,0 +1,23 @@
+<?php //%255BShopware%255CCore%255CContent%255CSeo%255CApi%255CSeoActionController%255D%255B1%255D
+
+namespace Symfony\Component\VarExporter\Internal;
+
+return $getExpiry ? PHP_INT_MAX : Hydrator::hydrate(
+    $o = [
+        clone (Registry::$prototypes['Shopware\\Core\\Framework\\Routing\\Annotation\\RouteScope'] ?? Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\RouteScope')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\RouteScope' => [
+            'scopes' => [
+                [
+                    'api',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+    ],
+    []
+);

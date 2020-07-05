@@ -1,0 +1,29 @@
+<?php //%255BShopware%255CCore%255CContent%255CCms%255CSalesChannel%255CSalesChannelCmsPageController%2523getPage%255D%255B1%255D
+
+namespace Symfony\Component\VarExporter\Internal;
+
+return $getExpiry ? PHP_INT_MAX : Hydrator::hydrate(
+    $o = [
+        clone (Registry::$prototypes['Symfony\\Component\\Routing\\Annotation\\Route'] ?? Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/sales-channel-api/v1/cms-page/{pageId}',
+            ],
+            'name' => [
+                'sales-channel-api.cms.page',
+            ],
+            'methods' => [
+                [
+                    'GET',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+    ],
+    []
+);

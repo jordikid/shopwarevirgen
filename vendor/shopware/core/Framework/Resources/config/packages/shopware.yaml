@@ -1,0 +1,37 @@
+shopware:
+    filesystem:
+        private:
+            type: "local"
+            config:
+                root: "%kernel.project_dir%/files"
+        public:
+            type: "local"
+            config:
+                root: "%kernel.project_dir%/public"
+        allowed_extensions: ["jpg", "jpeg", "png", "webp", "gif", "svg", "bmp", "tiff", "tif", "eps", "webm", "mkv", "flv", "ogv", "ogg", "mov", "mp4", "avi", "wmv", "pdf", "aac", "mp3", "wav", "flac", "oga", "wma", "txt", "doc"]
+
+    cdn:
+        url: ~
+        strategy: "id"
+
+    api:
+        max_limit: 500
+        allowed_limits: [1, 5, 9, 10, 25, 50, 75, 100, 500]
+        api_browser:
+            auth_required: true
+
+    admin_worker:
+        enable_admin_worker: true
+        poll_interval: 30
+        transports: ["default"]
+
+    auto_update:
+        enabled: true
+
+    store:
+        frw: false
+
+    sitemap:
+        batchsize: 100
+        custom_urls:
+        excluded_urls:

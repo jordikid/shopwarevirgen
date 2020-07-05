@@ -1,0 +1,43 @@
+<?php //%255BShopware%255CAdministration%255CController%255CAdministrationController%2523index%255D%255B1%255D
+
+namespace Symfony\Component\VarExporter\Internal;
+
+return $getExpiry ? PHP_INT_MAX : Hydrator::hydrate(
+    $o = [
+        clone (($p = &Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\RouteScope'] ?? Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\RouteScope')),
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\RouteScope' => [
+            'scopes' => [
+                [
+                    'administration',
+                ],
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                1 => '/admin',
+            ],
+            'name' => [
+                1 => 'administration.index',
+            ],
+            'defaults' => [
+                1 => [
+                    'auth_required' => false,
+                ],
+            ],
+            'methods' => [
+                1 => [
+                    'GET',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+    ],
+    []
+);

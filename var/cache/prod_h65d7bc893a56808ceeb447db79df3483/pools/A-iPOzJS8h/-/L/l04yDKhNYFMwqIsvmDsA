@@ -1,0 +1,46 @@
+<?php //%255BShopware%255CStorefront%255CController%255CCmsController%2523filter%255D%255B1%255D
+
+namespace Symfony\Component\VarExporter\Internal;
+
+return $getExpiry ? PHP_INT_MAX : Hydrator::hydrate(
+    $o = [
+        clone (($p = &Registry::$prototypes)['Shopware\\Storefront\\Framework\\Cache\\Annotation\\HttpCache'] ?? Registry::p('Shopware\\Storefront\\Framework\\Cache\\Annotation\\HttpCache')),
+        clone ($p['Shopware\\Core\\Framework\\Routing\\Annotation\\RouteScope'] ?? Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\RouteScope')),
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\RouteScope' => [
+            'scopes' => [
+                1 => [
+                    'storefront',
+                ],
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                2 => '/widgets/cms/navigation/{navigationId}/filter',
+            ],
+            'name' => [
+                2 => 'frontend.cms.navigation.filter',
+            ],
+            'defaults' => [
+                2 => [
+                    'XmlHttpRequest' => true,
+                ],
+            ],
+            'methods' => [
+                2 => [
+                    'GET',
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+    ],
+    []
+);

@@ -1,0 +1,29 @@
+<?php //%255BShopware%255CCore%255CSystem%255CStateMachine%255CApi%255CStateMachineActionController%2523transitionState%255D%255B1%255D
+
+namespace Symfony\Component\VarExporter\Internal;
+
+return $getExpiry ? PHP_INT_MAX : Hydrator::hydrate(
+    $o = [
+        clone (Registry::$prototypes['Symfony\\Component\\Routing\\Annotation\\Route'] ?? Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/api/v{version}/_action/state-machine/{entityName}/{entityId}/state/{transition}',
+            ],
+            'name' => [
+                'api.state_machine.transition_state',
+            ],
+            'methods' => [
+                [
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+    ],
+    []
+);

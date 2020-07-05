@@ -1,0 +1,36 @@
+<?php //%255BShopware%255CStorefront%255CController%255CNavigationController%2523offcanvas%255D%255B1%255D
+
+namespace Symfony\Component\VarExporter\Internal;
+
+return $getExpiry ? PHP_INT_MAX : Hydrator::hydrate(
+    $o = [
+        clone (($p = &Registry::$prototypes)['Shopware\\Storefront\\Framework\\Cache\\Annotation\\HttpCache'] ?? Registry::p('Shopware\\Storefront\\Framework\\Cache\\Annotation\\HttpCache')),
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                1 => '/widgets/menu/offcanvas',
+            ],
+            'name' => [
+                1 => 'frontend.menu.offcanvas',
+            ],
+            'defaults' => [
+                1 => [
+                    'XmlHttpRequest' => true,
+                ],
+            ],
+            'methods' => [
+                1 => [
+                    'GET',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+    ],
+    []
+);

@@ -1,0 +1,41 @@
+<?php //%255BShopware%255CCore%255CSystem%255CNumberRange%255CApi%255CNumberRangeController%2523previewPattern%255D%255B1%255D
+
+namespace Symfony\Component\VarExporter\Internal;
+
+return $getExpiry ? PHP_INT_MAX : Hydrator::hydrate(
+    $o = [
+        clone (($p = &Registry::$prototypes)['Symfony\\Component\\Routing\\Annotation\\Route'] ?? Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+        clone ($p['Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Cache'] ?? Registry::p('Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Cache')),
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/api/v{version}/_action/number-range/preview-pattern/{type}',
+            ],
+            'name' => [
+                'api.action.number-range.preview-pattern',
+            ],
+            'defaults' => [
+                [
+                    'type' => 'default',
+                ],
+            ],
+            'methods' => [
+                [
+                    'GET',
+                ],
+            ],
+        ],
+        'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Cache' => [
+            'mustRevalidate' => [
+                1 => true,
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+    ],
+    []
+);

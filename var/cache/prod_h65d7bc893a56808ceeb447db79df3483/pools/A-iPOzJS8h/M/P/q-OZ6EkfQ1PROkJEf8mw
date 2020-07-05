@@ -1,0 +1,36 @@
+<?php //%255BShopware%255CStorefront%255CController%255CCmsController%2523category%255D%255B1%255D
+
+namespace Symfony\Component\VarExporter\Internal;
+
+return $getExpiry ? PHP_INT_MAX : Hydrator::hydrate(
+    $o = [
+        clone (Registry::$prototypes['Symfony\\Component\\Routing\\Annotation\\Route'] ?? Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/widgets/cms/navigation/{navigationId}',
+            ],
+            'name' => [
+                'frontend.cms.navigation.page',
+            ],
+            'defaults' => [
+                [
+                    'navigationId' => null,
+                    'XmlHttpRequest' => true,
+                ],
+            ],
+            'methods' => [
+                [
+                    'GET',
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+    ],
+    []
+);

@@ -1,0 +1,44 @@
+{
+  "sw-settings-seo": {
+    "general": {
+      "mainMenuItemGeneral": "SEO",
+      "descriptionTextModule": "Manage SEO settings.",
+      "textHeadline" : "SEO",
+      "buttonSave": "Save"
+    }
+  },
+  "sw-settings-seo-entity-detail": {
+    "labelMetaTitle": "Meta-Title",
+    "labelAdditionalText": "Meta-Description"
+  },
+  "sw-seo-url-template-card": {
+    "general": {
+      "titleCard": "SEO URL templates",
+      "labelPossibleValues": "Possible variables",
+      "tooltipValidTemplate": "Template valid",
+      "tooltipInvalidTemplate": "Invalid template",
+      "titleSaveError": "Error",
+      "messageSaveError": "Not all templates are valid.",
+      "titleSaveSuccess": "Success",
+      "messageSaveSuccess": "SEO URL templates have been saved.",
+      "preview": "Preview:",
+      "placeholderSelectVariables": "Search and select...",
+      "labelSalesChannelSelect": "Sales Channel",
+      "textUrlPreviewNotPossible": "A preview for this template could not be generated.",
+      "textUrlNoEntitiesForPreview": "There are is no {entity} to generate a preview for. Please create one."
+    },
+    "routeNames": {
+      "frontend-detail-page": "Product detail page",
+      "frontend-navigation-page": "Category page"
+    }
+  },
+  "sw-seo-url": {
+    "titleCard": "Canonical URLs",
+    "labelSalesChannelSelect": "Sales Channel",
+    "labelSeoPathInfo": "SEO path",
+    "textEmptySeoUrls": "There are no canonical URLs yet.",
+    "textSeoUrlsDisallowedForHeadless": "SEO URLs cannot be assigned to a headless Sales Channel.",
+    "labelMainCategory": "Main category",
+    "placeholderMainCategory": "Choose a main category..."
+  }
+}

@@ -1,0 +1,44 @@
+<?php //%255BShopware%255CCore%255CCheckout%255CPayment%255CController%255CPaymentController%2523finalizeTransaction%255D%255B1%255D
+
+namespace Symfony\Component\VarExporter\Internal;
+
+return $getExpiry ? PHP_INT_MAX : Hydrator::hydrate(
+    $o = [
+        clone (($p = &Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\RouteScope'] ?? Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\RouteScope')),
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\RouteScope' => [
+            'scopes' => [
+                [
+                    'storefront',
+                ],
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                1 => '/payment/finalize-transaction',
+            ],
+            'name' => [
+                1 => 'payment.finalize.transaction',
+            ],
+            'defaults' => [
+                1 => [
+                    'auth_required' => false,
+                ],
+            ],
+            'methods' => [
+                1 => [
+                    'GET',
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+    ],
+    []
+);

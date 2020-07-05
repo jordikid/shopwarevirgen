@@ -1,0 +1,29 @@
+<?php //%255BShopware%255CCore%255CSystem%255CSalesChannel%255CSalesChannel%255CSalesChannelContextController%2523update%255D%255B1%255D
+
+namespace Symfony\Component\VarExporter\Internal;
+
+return $getExpiry ? PHP_INT_MAX : Hydrator::hydrate(
+    $o = [
+        clone (Registry::$prototypes['Symfony\\Component\\Routing\\Annotation\\Route'] ?? Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/sales-channel-api/v{version}/context',
+            ],
+            'name' => [
+                'sales-channel-api.context.update',
+            ],
+            'methods' => [
+                [
+                    'PATCH',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+    ],
+    []
+);

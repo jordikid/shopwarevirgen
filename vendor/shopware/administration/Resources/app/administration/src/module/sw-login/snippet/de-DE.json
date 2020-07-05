@@ -1,0 +1,60 @@
+{
+  "sw-login": {
+    "general": {
+      "mainMenuItemIndex": "Login",
+      "description": "Shopware-Login"
+    },
+    "index": {
+      "headlineMain": "Hallo!",
+      "subheadlineMain": "Willkommen zurück.",
+      "headlineForm": "Melde Dich in Deinem Shopware-Shop an.",
+      "labelUsername": "Benutzername",
+      "labelPassword": "Passwort",
+      "placeholderUsername": "Gib Deinen Benutzernamen ein ...",
+      "placeholderPassword": "Gib Dein Passwort ein ...",
+      "buttonLogin": "Anmelden",
+      "titleErrorMessage": "Fehler",
+      "messageUnsupportedGrantType": "\"Grant-Type\" wird nicht unterstützt.",
+      "messageInvalidRequest": "Invalide Anfrage.",
+      "messageInvalidClient": "Die Client-Authentifizierung ist fehlgeschlagen.",
+      "messageInvalidScope": "Der angegebene Scope ist invalide.",
+      "messageInvalidCredentials": "Die Benutzerinformationen sind invalide.",
+      "messageServerError": "Ein allgemeiner Fehler beim Authenfizierungsserver ist aufgetreten.",
+      "messageInvalidRefreshToken": "Der angegebene Refresh-Token ist invalide.",
+      "messageAccessDenied": "Der Zugriff wurde verweigert.",
+      "messageInvalidGrant": "Der Grant-Type oder der Refresh-Token ist invalide.",
+      "messageGeneralRequestError": "Die Anfrage an \"{url}\" ist fehlgeschlagen.",
+      "forgottenPasswordLink": "Hast Du Dein Passwort vergessen?"
+    },
+    "recovery" : {
+      "info": {
+        "headline": "Zurück zum Login",
+        "info": "Wenn Du eine gültige E-Mail-Adresse angegeben hast, erhältst Du innerhalb weniger Minuten eine E-Mail zur Passwort-Wiederherstellung.",
+        "warning": "Bitte beachte, dass der Wiederherstellungs-Link nur für 2 Stunden gültig ist."
+      },
+      "recovery": {
+        "headline": "Passwort-Wiederherstellung",
+        "newPasswordField": {
+          "label": "Gib ein neues Passwort ein ..."
+        },
+        "passwordConfirmField": {
+          "label": "Wiederhole Dein neues Passwort"
+        },
+        "submit": {
+          "label": "Passwort aktualisieren"
+        },
+        "errorMessage": "Dein Wiederherstellungs-Link ist ungültig oder abgelaufen!"
+      },
+      "headline": "Passwort-Wiederherstellung",
+      "text": "Gib die mit Deinem Konto verknüpfte E-Mail-Adresse ein.",
+      "email": {
+        "label": "E-Mail-Adresse:",
+        "placeholder": "shop@beispiel.de"
+      },
+      "error": {
+        "passwordUpdateTitle": "Beim Aktualisieren Deines Passworts ist ein Fehler aufgetreten:"
+      },
+      "submit": "Wiederherstellungs-Link senden"
+    }
+  }
+}

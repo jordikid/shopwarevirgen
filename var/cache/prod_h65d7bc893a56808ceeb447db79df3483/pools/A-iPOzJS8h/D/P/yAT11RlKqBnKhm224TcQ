@@ -1,0 +1,35 @@
+<?php //%255BShopware%255CStorefront%255CController%255CCountryStateController%2523getCountryData%255D%255B1%255D
+
+namespace Symfony\Component\VarExporter\Internal;
+
+return $getExpiry ? PHP_INT_MAX : Hydrator::hydrate(
+    $o = [
+        clone (Registry::$prototypes['Symfony\\Component\\Routing\\Annotation\\Route'] ?? Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                'country/country-state-data',
+            ],
+            'name' => [
+                'frontend.country.country.data',
+            ],
+            'defaults' => [
+                [
+                    'csrf_protected' => false,
+                    'XmlHttpRequest' => true,
+                ],
+            ],
+            'methods' => [
+                [
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+    ],
+    []
+);

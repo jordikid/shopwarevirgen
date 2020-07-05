@@ -1,0 +1,29 @@
+<?php //%255BShopware%255CCore%255CContent%255CNewsletter%255CSalesChannel%255CSalesChannelNewsletterController%2523subscribe%255D%255B1%255D
+
+namespace Symfony\Component\VarExporter\Internal;
+
+return $getExpiry ? PHP_INT_MAX : Hydrator::hydrate(
+    $o = [
+        clone (Registry::$prototypes['Symfony\\Component\\Routing\\Annotation\\Route'] ?? Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/sales-channel-api/v{version}/newsletter/subscribe',
+            ],
+            'name' => [
+                'sales-channel-api.newsletter.subscribe',
+            ],
+            'methods' => [
+                [
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+    ],
+    []
+);

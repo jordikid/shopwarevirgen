@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "name": "sw-cypress",
+  "version": "1.0.0",
+  "description": "E2E Test suite for the Shopware storefront",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "cypress:open": "./node_modules/.bin/cypress open",
+    "cypress:run": "./node_modules/.bin/cypress run",
+    "cypress": "./node_modules/.bin/cypress"
+  },
+  "dependencies": {
+    "@babel/core": "^7.7.7",
+    "@shopware-ag/e2e-testsuite-platform": "1.1.6",
+    "uuid": "^3.3.3",
+    "cypress-multi-reporters": "^1.2.3",
+    "mocha": "^7.0.0",
+    "mocha-junit-reporter": "^1.23.1",
+    "mochawesome": "^4.1.0",
+    "mochawesome-merge": "^4.0.0",
+    "mochawesome-report-generator": "^4.1.0"
+  }
+}
